@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #559b92;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #b1e699;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(220, 42, 42, 0.915);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="/regex" method="post">
+        <h1>Welcome to regex page</h1>
+        <label for="regex_pattern">Enter regex pattern:</label>
+        <input type="text"  name="regex_pattern" placeholder="Enter your regex pattern" required>
+
+        <label for="in_string">Enter input data:</label>
+        <textarea rows="5" cols="50" type="text" name="in_string" placeholder="asbhc6725@#$#@$@........." required ></textarea>
+
+        <input type="submit" value="Click">
+        <h1><br>{{result}}</h1>
+    </form>
+
+    <form action="/email" method="post">
+        <h1>Welcome to email validation box</h1>
+
+        <label for="input_mail">Enter email:</label>
+        <input type="text" name="input_mail" placeholder="asbh23@gmail.com" required ></textarea>
+
+        <input type="submit" value="Click">
+        <h1><br>{{value}}</h1>
+    </form>
+</body>
+</html>
